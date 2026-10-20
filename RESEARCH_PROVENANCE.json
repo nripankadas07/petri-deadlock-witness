@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-20",
+  "comparables": [
+    {
+      "full_name": "process-intelligence-solutions/pm4py",
+      "html_url": "https://github.com/process-intelligence-solutions/pm4py",
+      "stargazers_count": 1065,
+      "pushed_at": "2026-10-19T06:24:38Z",
+      "default_branch": "release",
+      "license": {
+        "key": "agpl-3.0",
+        "name": "GNU Affero General Public License v3.0",
+        "spdx_id": "AGPL-3.0",
+        "url": "https://api.github.com/licenses/agpl-3.0",
+        "node_id": "MDc6TGljZW5zZTE="
+      },
+      "description": "Official public repository for PM4Py (Process Mining for Python) \u2014 an open-source library for exploring, analyzing, and optimizing business processes with Python.",
+      "observed": "2026-10-20T06:13:34.445Z",
+      "recent_open_items": [
+        {
+          "number": 576,
+          "title": "fix: run DFG playout example with current APIs",
+          "url": "https://github.com/process-intelligence-solutions/pm4py/pull/576",
+          "is_pr": true
+        },
+        {
+          "number": 575,
+          "title": "fix: render titles in basic POWL diagrams",
+          "url": "https://github.com/process-intelligence-solutions/pm4py/pull/575",
+          "is_pr": true
+        },
+        {
+          "number": 574,
+          "title": "Remove redundant trace-count comparison",
+          "url": "https://github.com/process-intelligence-solutions/pm4py/pull/574",
+          "is_pr": true
+        }
+      ]
+    },
+    {
+      "full_name": "sarahtattersall/PIPE",
+      "html_url": "https://github.com/sarahtattersall/PIPE",
+      "stargazers_count": 250,
+      "pushed_at": "2022-06-28T15:04:05Z",
+      "default_branch": "master",
+      "license": {
+        "key": "mit",
+        "name": "MIT License",
+        "spdx_id": "MIT",
+        "url": "https://api.github.com/licenses/mit",
+        "node_id": "MDc6TGljZW5zZTEz"
+      },
+      "description": "PIPE - Platform Independent Petri Net Editor",
+      "observed": "2026-10-20",
+      "recent_open_items": [
+        {
+          "number": 140,
+          "title": "On MacOS the latest version of PIPE didn't run",
+          "url": "https://github.com/sarahtattersall/PIPE/issues/140",
+          "is_pr": false
+        },
+        {
+          "number": 139,
+          "title": "Named items: places, transitions, arcs",
+          "url": "https://github.com/sarahtattersall/PIPE/issues/139",
+          "is_pr": false
+        },
+        {
+          "number": 138,
+          "title": "Apple Sillicon Support  (M1 & M3 Pro)",
+          "url": "https://github.com/sarahtattersall/PIPE/issues/138",
+          "is_pr": false
+        }
+      ]
+    },
+    {
+      "full_name": "fpom/snakes",
+      "html_url": "https://github.com/fpom/snakes",
+      "stargazers_count": 102,
+      "pushed_at": "2024-06-03T10:56:55Z",
+      "default_branch": "master",
+      "license": {
+        "key": "other",
+        "name": "Other",
+        "spdx_id": "NOASSERTION",
+        "url": null,
+        "node_id": "MDc6TGljZW5zZTA="
+      },
+      "description": "Moved to Codeberg",
+      "observed": "2026-10-20T06:13:34.095Z",
+      "recent_open_items": [
+        {
+          "number": 20,
+          "title": "Inhibitor arc is throwing exception",
+          "url": "https://github.com/fpom/snakes/issues/20",
+          "is_pr": false
+        }
+      ]
+    }
+  ],
+  "query": {
+    "query": "petri net",
+    "url": "https://github.com/search?q=petri+net&type=repositories&s=stars&o=desc",
+    "observed": "2026-10-20T06:16:26.697Z"
+  },
+  "highest_star_relevant_found": "process-intelligence-solutions/pm4py",
+  "limits": "Most-stars site search is scoped and keyword dependent, not an exhaustive global ranking. Also read manually found established comparables. Some leading keyword results are adjacent or irrelevant. Competitors not installed/timed/stress tested. No absence, reliability, superiority or performance claim. Issues/PRs are small current samples, not evidence of an unresolved competitor-wide defect.",
+  "read_sources": "Current repository READMEs, metadata and sampled issues; relevant implementations/fixtures for SQLGlot simplify, NetworkX DAG, criticalpath, PM4Py/SNAKES Petri semantics, OSRM restrictions and automata/brics inclusion. No source copied."
+}

@@ -1,0 +1,18 @@
+{
+  "complete": true,
+  "cutoff_edges": 0,
+  "deadlock_count": 1,
+  "exit_code": 1,
+  "explored_states": 2,
+  "never_enabled_in_explored_states": [],
+  "shortest_deadlock": {
+    "marking": {
+      "held": 1,
+      "idle": 0
+    },
+    "transitions": [
+      "acquire"
+    ]
+  },
+  "status": "deadlock_found"
+}

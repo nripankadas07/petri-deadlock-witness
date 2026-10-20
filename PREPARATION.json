@@ -1,0 +1,80 @@
+{
+  "state": "VALIDATED",
+  "occurrence": "GH-20261020",
+  "observed": "2026-10-20T06:29:22.734653+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "platform": "Linux-6.18.55-x86_64-with-glibc2.39",
+  "commands": [
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-v"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "test_cycle_complete (test_contract.Contract.test_cycle_complete) ... ok\ntest_input_unchanged (test_contract.Contract.test_input_unchanged) ... ok\ntest_shortest_deadlock_and_terminal (test_contract.Contract.test_shortest_deadlock_and_terminal) ... ok\ntest_state_bound_is_unknown (test_contract.Contract.test_state_bound_is_unknown) ... ok\ntest_strict_cli_failures (test_contract.Contract.test_strict_cli_failures) ... ok\ntest_unbounded_growth_is_unknown (test_contract.Contract.test_unbounded_growth_is_unknown) ... ok\ntest_unknown_arc_and_boolean (test_contract.Contract.test_unknown_arc_and_boolean) ... ok\ntest_weighted_consumption_and_no_transition (test_contract.Contract.test_weighted_consumption_and_no_transition) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.147s\n\nOK\n"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "petri_deadlock_witness.py"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-deps",
+        "--no-build-isolation",
+        ".",
+        "-w",
+        "dist"
+      ],
+      "exit": 0,
+      "stdout": "Processing ./.\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: petri-deadlock-witness\n  Building wheel for petri-deadlock-witness (pyproject.toml): started\n  Building wheel for petri-deadlock-witness (pyproject.toml): finished with status 'done'\n  Created wheel for petri-deadlock-witness: filename=petri_deadlock_witness-0.1.0-py3-none-any.whl size=6852 sha256=c5741b0ef5bfeeddb41e079819783c5a31acdf8bf4d4aa573bcae4df17a04798\n  Stored in directory: /tmp/pip-ephem-wheel-cache-cn0aobio/wheels/87/25/bf/1443f48fb3e10a9d22442ba8fe321b01837328b058fc5cada1\nSuccessfully built petri-deadlock-witness\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "/tmp/fresh-console-xnwoqvuq/venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "/workspace/scratch/5d784ffbbfd3/prepared-oct20/petri-deadlock-witness/dist/petri_deadlock_witness-0.1.0-py3-none-any.whl"
+      ],
+      "exit": 0,
+      "stdout": "Processing /workspace/scratch/5d784ffbbfd3/prepared-oct20/petri-deadlock-witness/dist/petri_deadlock_witness-0.1.0-py3-none-any.whl\nInstalling collected packages: petri-deadlock-witness\nSuccessfully installed petri-deadlock-witness-0.1.0\n",
+      "stderr": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.1\n[notice] To update, run: python -m pip install --upgrade pip\n"
+    },
+    {
+      "argv": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "/workspace/scratch/5d784ffbbfd3/prepared-oct20/petri-deadlock-witness/verify_installed.py",
+        "/tmp/fresh-console-xnwoqvuq/venv/bin/python"
+      ],
+      "exit": 0,
+      "stdout": "{\"installed_console\": true, \"outside_checkout\": true, \"expected_results\": true, \"meaningful_failure_case\": true, \"source_unchanged\": true, \"input_sha256\": \"3908dc51a1769a82b9a22313615a99cc116f8357829e225da514a94df492cb0b\"}\n",
+      "stderr": ""
+    }
+  ],
+  "installed": {
+    "installed_console": true,
+    "outside_checkout": true,
+    "expected_results": true,
+    "meaningful_failure_case": true,
+    "source_unchanged": true,
+    "input_sha256": "3908dc51a1769a82b9a22313615a99cc116f8357829e225da514a94df492cb0b"
+  },
+  "limits": "Local wheel build uses installed build tools without isolation due environment network; remote CI uses normal isolated pip wheel build, a fresh venv and actual installed console. Linux only. No competitor performance benchmark."
+}

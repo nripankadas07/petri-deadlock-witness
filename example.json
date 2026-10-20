@@ -1,0 +1,20 @@
+{
+  "initial": {
+    "idle": 1,
+    "held": 0
+  },
+  "transitions": [
+    {
+      "id": "acquire",
+      "consume": {
+        "idle": 1
+      },
+      "produce": {
+        "held": 1
+      }
+    }
+  ],
+  "terminal": [],
+  "token_limit": 4,
+  "state_limit": 100
+}
