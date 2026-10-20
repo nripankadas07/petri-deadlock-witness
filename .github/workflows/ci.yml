@@ -1,0 +1,21 @@
+name: CI
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ['3.10', '3.12', '3.14']
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - run: python -m unittest -v
+      - run: python -m compileall -q petri_deadlock_witness.py
+      - run: python -m pip wheel --no-deps . -w dist
+      - run: python -m venv /tmp/installed-check
+      - run: /tmp/installed-check/bin/python -m pip install --no-deps dist/*.whl
+      - run: python verify_installed.py /tmp/installed-check/bin/python
